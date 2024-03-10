@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 09</title>
+</head>
+
+<body>
+
+    <script>
+
+        const num1 = parseFloat(prompt("Informe o primeiro número:"));
+        const num2 = parseFloat(prompt("Informe o segundo número:"));
+
+        if (!isNaN(num1) && !isNaN(num2)) {
+
+            const resultado = (num1 + num2) * num1;
+
+            console.log("O resultado é: " + resultado);
+        } else {
+
+            console.log("Por favor, Informe dois números válidos.");
+        }
+
+    </script>
+
+</body>
+
+</html>

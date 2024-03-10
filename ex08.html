@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 08</title>
+</head>
+
+<body>
+
+    <script>
+
+        const raio = Number(prompt("Informe o raio da caixa d'água cilíndrica"));
+        const altura = Number(prompt("Informe a altura da caixa d'água cilíndrica"));
+
+        if (isNaN(raio) || isNaN(altura)) {
+            console.log("Informe números válidos para o raio e a altura.");
+        } else {
+
+            const volume = Math.PI * Math.pow(raio, 2) * altura;
+
+            console.log("O volume da caixa d'água cilíndrica é " + volume + " unidades cúbicas.");
+        }
+
+
+    </script>
+
+</body>
+
+</html>

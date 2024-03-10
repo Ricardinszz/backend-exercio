@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 03</title>
+</head>
+
+<body>
+
+    <script>
+
+        const salarioAtual = parseFloat(prompt("Informe o salário mensal atual do funcionário:"));
+
+        const percentualReajuste = parseFloat(prompt("Informe o percentual de reajuste:"));
+
+        let novoSalario;
+        if (percentualReajuste >= 0) {
+            novoSalario = salarioAtual + (salarioAtual * percentualReajuste / 100);
+        } else {
+            console.log("O percentual de reajuste não pode ser negativo.");
+        }
+
+        console.log("O valor do novo salário é: " + novoSalario);
+
+
+    </script>
+
+</body>
+
+</html>

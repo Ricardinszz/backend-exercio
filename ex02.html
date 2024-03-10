@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02</title>
+</head>
+
+<body>
+
+    <script>
+        
+        const totalEleitores = parseInt(prompt("Informe o número total de eleitores:"));
+        const votosBrancos = parseInt(prompt("Informe o número de votos brancos:"));
+        const votosNulos = parseInt(prompt("Informe o número de votos nulos:"));
+        const votosValidos = parseInt(prompt("Informe o número de votos válidos:"));
+
+        if (votosBrancos + votosNulos + votosValidos > totalEleitores) {
+            console.log("Erro: A soma dos votos não pode ser maior que o total de eleitores.");
+        } else {
+            
+            const percentBrancos = (votosBrancos / totalEleitores) * 100;
+            const percentNulos = (votosNulos / totalEleitores) * 100;
+            const percentValidos = (votosValidos / totalEleitores) * 100;
+
+            console.log(`Percentual de votos brancos: ${percentBrancos.toFixed(2)}%`);
+            console.log(`Percentual de votos nulos: ${percentNulos.toFixed(2)}%`);
+            console.log(`Percentual de votos válidos: ${percentValidos.toFixed(2)}%`);
+        }
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 06</title>
+</head>
+
+<body>
+
+    <script>
+
+        const numeroCarrosVendidos = Number(prompt("Informe o número de carros vendidos: "));
+        const valorTotalVendas = Number(prompt("Informe o valor total das vendas: "));
+        const salarioFixo = Number(prompt("Informe o salário fixo: "));
+        const valorPorCarroVendido = Number(prompt("Informe o valor recebido por carro vendido: "));
+
+        const comissaoVendas = 0.05 * valorTotalVendas;
+
+        const comissaoCarros = numeroCarrosVendidos * valorPorCarroVendido;
+
+        const salarioFinal = salarioFixo + comissaoVendas + comissaoCarros;
+
+        console.log("O salário final do vendedor é: " + salarioFinal);
+
+
+    </script>
+
+</body>
+
+</html>
